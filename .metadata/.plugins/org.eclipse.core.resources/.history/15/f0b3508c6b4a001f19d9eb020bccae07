@@ -1,0 +1,6 @@
+package com.vickee.restapp.service;
+
+public interface BookingService {
+	
+	public void addBooking(Booking)
+}

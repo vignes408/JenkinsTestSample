@@ -1,0 +1,6 @@
+package com.vickee.restapp.controller;
+
+
+public class ArtistController {
+
+}

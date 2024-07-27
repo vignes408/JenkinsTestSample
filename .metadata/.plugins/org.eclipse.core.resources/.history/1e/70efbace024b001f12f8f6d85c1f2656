@@ -1,0 +1,5 @@
+package com.vickee.restapp.model;
+
+public class Artist {
+
+}

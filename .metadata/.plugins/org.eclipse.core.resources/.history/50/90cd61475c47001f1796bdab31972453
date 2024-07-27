@@ -1,0 +1,37 @@
+package com.vickee.restapp.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.vickee.restapp.model.Register;
+import com.vickee.restapp.serviceimpl.RegisterServiceImpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+ 
+@RestController
+@RequestMapping("/api")
+public class RegisterController {
+    @Autowired
+    private Reg userService;
+ 
+    @PostMapping("/reg")
+    public ResponseEntity<String> registerUser(@RequestBody User user) {
+        userService.saveUser(user);
+        return ResponseEntity.ok("User registered successfully");
+    }
+ 
+    @PostMapping("/login")
+    public ResponseEntity<String> loginUser(@RequestBody User user) {
+        User existingUser = userService.findByNameAndPassword(user.getName(), user.getPassword());
+        if (existingUser != null) {
+            return ResponseEntity.ok("Login successful");
+        }
+        return ResponseEntity.status(401).body("Invalid credentials");
+    }
+}

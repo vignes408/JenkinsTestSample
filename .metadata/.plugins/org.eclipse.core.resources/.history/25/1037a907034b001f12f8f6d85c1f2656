@@ -1,0 +1,15 @@
+package com.vickee.restapp.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "art_tbl")
+public class Artist {
+	
+	@
+	private int aid;
+	private String artistName;
+	private String city;
+	private String artType;
+}

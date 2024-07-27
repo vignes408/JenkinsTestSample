@@ -1,0 +1,20 @@
+package com.vickee.seleniumtestex;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+
+class MobileHomeTest2 {
+
+		  @Test
+		  void testDel() {
+			  We
+			  	driver.get("http://localhost:3000/");
+			    driver.findElement(By.linkText("VIEWREPAIR")).click();
+			    driver.findElement(By.cssSelector("tr:nth-child(3) .ms-1")).click();
+			    assertEquals("Do you want to delete", "Do you want to delete");
+			    assertEquals("Data has deleted","Data has deleted");
+		    }
+	}
+

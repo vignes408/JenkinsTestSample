@@ -1,0 +1,9 @@
+package com.vickee.restapp.model;
+
+import jakarta.persistence.Entity;
+
+@Entity
+@Table(name="register_tbl")
+public class Register {
+
+}

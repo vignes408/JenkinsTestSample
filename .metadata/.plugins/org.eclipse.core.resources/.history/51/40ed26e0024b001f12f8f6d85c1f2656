@@ -1,0 +1,8 @@
+package com.vickee.restapp.model;
+
+public class Artist {
+
+	private int aid;
+	private String artistName;
+	
+}

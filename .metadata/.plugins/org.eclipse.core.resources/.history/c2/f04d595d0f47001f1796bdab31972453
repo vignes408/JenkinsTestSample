@@ -1,0 +1,5 @@
+package com.vickee.restapp.service;
+
+public interface RegisterService {
+
+}

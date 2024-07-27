@@ -1,0 +1,26 @@
+package com.vickee.restapp.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.vickee.restapp.model.Register;
+import com.vickee.restapp.repository.RegisterRepo;
+
+@Service
+public interface RegisterService {
+	@Autowired
+	private RegisterRepo repo;
+	
+    public Register saveUser(Register user) {
+        return repo.save(user);
+    }
+ 
+    public Register findByNameAndPassword(String name, String password) {
+        R user = repo.findByName(name);
+        if (user != null && user.getPassword().equals(password)) {
+            return user;
+        }
+        return null;
+    }
+	
+}

@@ -1,0 +1,40 @@
+package com.vickee.restapp.serviceimpl;
+
+import java.util.List;
+
+import com.vickee.restapp.model.Booking;
+import com.vickee.restapp.service.BookingService;
+
+public class BookingServiceImpl implements BookingService {
+
+	@Override
+	public void addBooking(Booking book) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Booking getBooking(int bid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Booking> getAllBooking() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateBooking(Booking book) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteBooking(int bid) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

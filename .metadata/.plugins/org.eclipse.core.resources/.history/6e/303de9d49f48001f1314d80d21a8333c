@@ -1,0 +1,381 @@
+package com.vickee.seleniumtestex;
+
+import static org.junit.Assert.assertSame;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+class MobileHomeTest {
+
+//	@Test
+//	void testMain() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/");
+//		assertEquals("React App",driver.getTitle());	
+//	}
+//	
+//	@Test
+//	void testAddRepair1() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/addrepair");
+//		driver.findElement(By.id("cusname")).sendKeys("vigneswaranrajesh");
+//        driver.findElement(By.id("city")).sendKeys("vnr");
+//        driver.findElement(By.id("repairtype")).sendKeys("mobile display");
+//        driver.findElement(By.id("submit")).click();
+//        assertSame("success", "Data added Successfully", "Data added Successfully");
+//	}
+//	
+//	@Test
+//	void testAddRepair2() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/addrepair");
+//		driver.findElement(By.id("cusname")).sendKeys("vigneswaranrajesh");
+//        driver.findElement(By.id("city")).sendKeys("vnr");
+//        driver.findElement(By.id("submit")).click();
+//        assertSame("failure", "Please Enter the Valid Inputs!!!", "Please Enter the Valid Inputs!!!");
+//	}
+//	
+//	@Test
+//	void testAddShop1() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/addshop");
+//		driver.findElement(By.name("sname")).sendKeys("VelMobiles");
+//        driver.findElement(By.name("sowner")).sendKeys("Velan");
+//        driver.findElement(By.name("location")).sendKeys("Madurai");
+//        driver.findElement(By.name("mobile")).sendKeys("976342525");
+//        driver.findElement(By.name("oid")).sendKeys("9");
+//        driver.findElement(By.name("submit")).click();
+//        assertSame("success", "Data added Successfully", "Data added Successfully");  
+//	}
+//	
+//	@Test
+//	void testAddShop2() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/addshop");
+//		driver.findElement(By.name("sname")).sendKeys("VelMobiles");
+//        driver.findElement(By.name("sowner")).sendKeys("Velan");
+//        driver.findElement(By.name("mobile")).sendKeys("976342525");
+//        driver.findElement(By.name("oid")).sendKeys("9");
+//        driver.findElement(By.name("submit")).click();
+//        assertSame("failure","Please Enter the Valid Inputs!!!","Please Enter the Valid Inputs!!!");
+//	}
+//	
+//	@Test
+//	void viewShop1() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/viewshop");
+//		driver.findElement(By.id("app2"));
+//		assertEquals("Mobile Repair Management System","Mobile Repair Management System");
+//	}
+//	
+//	@Test
+//	void viewShop2() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/viewshop");
+//		driver.findElement(By.id("view"));
+//		assertEquals("View Dealer","View Dealer");
+//	}
+//	
+//	@Test
+//	void viewDealer1() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/viewdealer");
+//		driver.findElement(By.id("app2"));
+//		assertEquals("Mobile Repair Management System","Mobile Repair Management System");
+//	}
+//	
+//	@Test
+//	void viewDealer2() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/viewdealer");
+//		driver.findElement(By.id("add"));
+//		assertEquals("Add +","Add +");
+//	}
+//	
+//	@Test
+//	void find() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/findshop");
+//		driver.findElement(By.id("search")).sendKeys("5");
+//		driver.findElement(By.id("submit")).click();
+//		assertEquals("Kovilpatti","Kovilpatti");
+//	}
+//	
+//	@Test
+//	void find1() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/findshop");
+//		driver.findElement(By.id("search")).sendKeys("5");
+//		driver.findElement(By.id("submit")).click();
+//		assertEquals("Display","Display");
+//	}
+//	
+//	@Test
+//	void findDeal() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/finddealer");
+//		driver.findElement(By.id("search")).sendKeys("7");
+//		driver.findElement(By.id("submit")).click();
+//		assertEquals("Mee","Mee");
+//	}
+//	
+//	@Test
+//	void findDeal1() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/finddealer");
+//		driver.findElement(By.id("search")).sendKeys("7");
+//		driver.findElement(By.id("submit")).click();
+//		assertEquals("Kvp","Kvp");
+//	}
+//	
+//	@Test
+//	void homePage() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/");
+//		driver.findElement(By.id("img"));
+//		assertEquals("MeeVickee","MeeVickee");
+//	}
+//	
+//	@Test
+//	void nav1() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/");
+//		driver.findElement(By.id("nav1"));
+//		assertEquals("HOME","HOME");
+//	}
+//	
+//	@Test
+//	void nav2() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/");
+//		driver.findElement(By.id("nav2"));
+//		assertEquals("ADDSHOP","ADDSHOP");
+//	}
+//	
+//	@Test
+//	void nav3() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/");
+//		driver.findElement(By.id("nav3"));
+//		assertEquals("VIEWSHOP","VIEWSHOP");
+//	}
+//	
+//	@Test
+//	void nav4() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/");
+//		driver.findElement(By.id("nav4"));
+//		assertEquals("FIND","FIND");
+//	}
+//	
+//	@Test
+//	void nav5() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/");
+//		driver.findElement(By.id("nav5"));
+//		assertEquals("ADDREPAIR","ADDREPAIR");
+//	}
+//	
+//	@Test
+//	void nav6() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/");
+//		driver.findElement(By.id("nav6"));
+//		assertEquals("VIEWREPAIR","VIEWREPAIR");
+//	}
+//	
+//	@Test
+//	void nav7() {
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("http://localhost:3000/");
+//		driver.findElement(By.id("nav7"));
+//		assertEquals("FINDREPAIR","FINDREPAIR");
+//	}
+	 private WebDriver driver;
+	 
+	    @BeforeAll
+	    void setUp() {
+	        driver = new ChromeDriver();
+	    }
+	 
+	    @AfterAll 
+	    void tearDown() {
+	        if (driver != null) {
+	            driver.quit();
+	        }
+	    }
+	 
+	    @BeforeEach
+	    void goToHomePage() {
+	    	driver.get("http://localhost:3000/");
+	    }
+	 
+	    @Test
+	    void test1() {
+	        assertEquals("React App", driver.getTitle());
+	    }
+	 
+	    @Test
+	    void testAddRepair1() {
+	driver.get("http://localhost:3000/addrepair");
+	driver.findElement(By.id("cusname")).sendKeys("vigneswaranrajesh");
+	driver.findElement(By.id("city")).sendKeys("vnr");
+	driver.findElement(By.id("repairtype")).sendKeys("mobile display");
+	driver.findElement(By.id("submit")).click();
+	        assertSame("success", "Data added Successfully", "Data added Successfully");
+	    }
+	 
+	    @Test
+	    void AddRepair2() {
+	driver.get("http://localhost:3000/addrepair");
+	driver.findElement(By.id("cusname")).sendKeys("vigneswaranrajesh");
+	driver.findElement(By.id("city")).sendKeys("vnr");
+	driver.findElement(By.id("submit")).click();
+	Alert alert = driver.switchTo().alert();
+//	System.out.println(alert.getText());
+	assertEquals("Please enter valid input",alert.getText());
+	    }
+	 
+//	    @Test
+//	    void testAddShop1() {
+//	driver.get("http://localhost:3000/addshop");
+//	driver.findElement(By.name("sname")).sendKeys("VelMobiles");
+//	driver.findElement(By.name("sowner")).sendKeys("Velan");
+//	driver.findElement(By.name("location")).sendKeys("Madurai");
+//	driver.findElement(By.name("mobile")).sendKeys("976342525");
+//	driver.findElement(By.name("oid")).sendKeys("9");
+//	driver.findElement(By.name("submit")).click();
+//	        assertSame("success", "Data added Successfully", "Data added Successfully");
+//	        
+//	    }
+	    
+//	    @Test
+//	    void testAddShop2() {
+//	driver.get("http://localhost:3000/addshop");
+//	driver.findElement(By.name("sname")).sendKeys("VelMobiles");
+//	driver.findElement(By.name("sowner")).sendKeys("Velan");
+////	driver.findElement(By.name("mobile")).sendKeys("976342525");
+//	driver.findElement(By.name("oid")).sendKeys("9");
+//	driver.findElement(By.name("submit")).click();
+//	Alert alert = driver.switchTo().alert();
+//	        assertEquals("Enter Valid Details ", alert.getText());
+//	    }
+//	 
+//	    @Test
+//	    void viewshop1() {
+//	driver.get("http://localhost:3000/viewshop");
+//	driver.findElement(By.id("view"));
+//	        assertEquals("Mobile Repair Management System", "Mobile Repair Management System");
+//	    }
+//	 
+//	    @Test
+//	    void viewshop2() {
+//	driver.get("http://localhost:3000/viewshop");
+//	driver.findElement(By.id("view"));
+//	        assertEquals("View Dealer", "View Dealer");
+//	    }
+	 
+	    @Test
+	    void viewdealer1() {
+	driver.get("http://localhost:3000/viewdealer");
+	driver.findElement(By.id("app2"));
+	        assertEquals("Mobile Repair Management System", "Mobile Repair Management System");
+	    }
+	 
+	    @Test
+	    void viewdealer2() {
+	driver.get("http://localhost:3000/viewdealer");
+	driver.findElement(By.id("add"));
+	        assertEquals("Add +", "Add +");
+	    }
+	 
+	    @Test
+	    void find() {
+	driver.get("http://localhost:3000/findshop");
+	driver.findElement(By.id("search")).sendKeys("5");
+	driver.findElement(By.id("submit")).click();
+	        assertEquals("Kovilpatti", "Kovilpatti");
+	    }
+	 
+	    @Test
+	    void find1() {
+	driver.get("http://localhost:3000/findshop");
+	driver.findElement(By.id("search")).sendKeys("5");
+	driver.findElement(By.id("submit")).click();
+	        assertEquals("Display", "Display");
+	    }
+	 
+	    @Test
+	    void deal() {
+	driver.get("http://localhost:3000/finddealer");
+	driver.findElement(By.id("search")).sendKeys("7");
+	driver.findElement(By.id("submit")).click();
+	        assertEquals("Mee","Mee");
+	    }
+	 
+	    @Test
+	    void findDeal1() {
+	driver.get("http://localhost:3000/finddealer");
+	driver.findElement(By.id("search")).sendKeys("7");
+	driver.findElement(By.id("submit")).click();
+	        assertEquals("Kvp", "Kvp");
+	    }
+	 
+	    @Test
+	    void homepage() {
+	    	driver.findElement(By.id("img"));
+	        assertEquals("MeeVickee", "MeeVickee");
+	    }
+	 
+	    @Test
+	    void nav1() {
+	driver.findElement(By.id("nav1"));
+	        assertEquals("HOME", "HOME");
+	    }
+	 
+	    @Test
+	    void nav2() {
+	driver.findElement(By.id("nav2"));
+	        assertEquals("ADDSHOP", "ADDSHOP");
+	    }
+	 
+	    @Test
+	    void nav3() {
+	driver.findElement(By.id("nav3"));
+	        assertEquals("VIEWSHOP", "VIEWSHOP");
+	    }
+	 
+	    @Test
+	    void nav4() {
+	driver.findElement(By.id("nav4"));
+	        assertEquals("FIND", "FIND");
+	    }
+	 
+	    @Test
+	    void nav5() {
+	driver.findElement(By.id("nav5"));
+	        assertEquals("ADDREPAIR", "ADDREPAIR");
+	    }
+	 
+	    @Test
+	    void nav6() {
+	driver.findElement(By.id("nav6"));
+	        assertEquals("VIEWREPAIR", "VIEWREPAIR");
+	    }
+	 
+	    @Test
+	    void nav7() {
+	driver.findElement(By.id("nav7"));
+	        assertEquals("FINDREPAIR", "FINDREPAIR");
+	    }
+}

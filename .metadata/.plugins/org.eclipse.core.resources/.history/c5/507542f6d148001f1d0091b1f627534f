@@ -1,0 +1,23 @@
+package com.vickee.PayrollTest;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+class AddPayrollTest {
+
+	@Test
+	void testAddPayroll1() {
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://localhost:3000/createpayroll");
+		driver.findElement(By.name("basic")).sendKeys("50000");
+		driver.findElement(By.name("hra")).sendKeys("50000");
+		driver.findElement(By.name("basic")).sendKeys("50000");
+
+		
+	}
+
+}

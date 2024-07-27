@@ -1,0 +1,18 @@
+package com.vickee.restapp.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="register_tbl")
+public class Register {
+	
+	@Id
+	
+	private String Name;
+	private String Password;
+	private String Repassword;
+	private long phNumber;
+	p
+}

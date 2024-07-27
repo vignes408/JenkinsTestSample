@@ -1,0 +1,5 @@
+package com.vickee.restapp.repository;
+
+public interface BookingRepo {
+
+}

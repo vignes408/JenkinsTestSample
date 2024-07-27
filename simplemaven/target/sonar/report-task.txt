@@ -1,0 +1,6 @@
+projectKey=simplemavencheck
+serverUrl=http://localhost:9000
+serverVersion=9.9.4.87374
+dashboardUrl=http://localhost:9000/dashboard?id=simplemavencheck
+ceTaskId=AZBSyohFvmpjBykubzy8
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AZBSyohFvmpjBykubzy8

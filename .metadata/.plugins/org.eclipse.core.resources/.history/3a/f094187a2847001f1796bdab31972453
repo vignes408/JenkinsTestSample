@@ -1,0 +1,9 @@
+package com.vickee.restapp.service;
+
+import com.vickee.restapp.model.Register;
+
+public interface RegisterService {
+	
+	public void addRegister(Register register);
+	public String validateUser(Register register);
+}

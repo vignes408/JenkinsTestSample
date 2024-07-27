@@ -1,0 +1,40 @@
+package com.vickee.restapp.serviceimpl;
+
+import java.util.List;
+
+import com.vickee.restapp.model.Artist;
+import com.vickee.restapp.service.ArtistService;
+
+public class ArtistServiceImpl implements ArtistService {
+
+	@Override
+	public void addArtist(Artist art) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Artist getArtist(int aid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Artist> getAllArtist() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateArtist(Artist art) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteArtist(int aid) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

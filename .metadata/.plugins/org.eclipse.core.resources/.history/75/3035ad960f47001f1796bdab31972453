@@ -1,0 +1,7 @@
+package com.vickee.restapp.serviceimpl;
+
+import com.vickee.restapp.service.RegisterService;
+
+public class RegisterServiceImpl implements RegisterService {
+
+}

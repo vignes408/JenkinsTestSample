@@ -1,0 +1,11 @@
+package com.vickee.restapp.service;
+
+import org.springframework.stereotype.Service;
+
+import com.vickee.restapp.model.Register;
+
+@Service
+public interface RegisterService {
+	
+	
+}

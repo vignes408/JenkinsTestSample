@@ -1,0 +1,16 @@
+package com.vickee.restapp.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.vickee.restapp.model.Register;
+import com.vickee.restapp.repository.RegisterRepo;
+
+@Service
+public interface RegisterService {
+	@Autowired
+	private RegisterRepo repo;
+	
+	
+	
+}

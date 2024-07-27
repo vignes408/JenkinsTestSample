@@ -1,0 +1,14 @@
+package com.vickee.restapp.serviceimpl;
+
+import com.vickee.restapp.model.Register;
+import com.vickee.restapp.service.RegisterService;
+
+public class RegisterServiceImpl implements RegisterService {
+
+	@Override
+	public String addRegister(Register register) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

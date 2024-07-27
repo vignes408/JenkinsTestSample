@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=StudentRestApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.vickee.restapp.service{StudentService.java[StudentService" modifiers="513" timestamp="1718258874508"/>
+    <typeInfo handle="=StudentRestApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.vickee.restapp.service{BookService.java[BookService" modifiers="513" timestamp="1718355420317"/>
+    <typeInfo handle="=CakeShop/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.vickee.restapp.service{OrderService.java[OrderService" modifiers="513" timestamp="1718695015184"/>
+    <typeInfo handle="=CakeShop/C:\/Users\/vigneswaran.rajesh\/.m2\/repository\/com\/mysql\/mysql-connector-j\/8.3.0\/mysql-connector-j-8.3.0.jar=/maven.pomderived=/true=/=/test=/true=/=/maven.groupId=/com.mysql=/=/maven.artifactId=/mysql-connector-j=/=/maven.version=/8.3.0=/=/maven.scope=/runtime=/=/maven.pomderived=/true=/&lt;com.mysql.cj.x.protobuf(MysqlxCrud$OrderOrBuilder.class[OrderOrBuilder" modifiers="1545" timestamp="1705352827000"/>
+    <typeInfo handle="=EmployManagement/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.vickee.restapp.service{EmpService.java[EmpService" modifiers="513" timestamp="1721280444690"/>
+    <typeInfo handle="=EmployManagement/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.vickee.restapp.service{PayrollService.java[PayrollService" modifiers="513" timestamp="1721278242887"/>
+    <typeInfo handle="=InventoryManagement/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.vickee.restapp.service{ShopKeeperService.java[ShopKeeperService" modifiers="513" timestamp="1721199847743"/>
+    <typeInfo handle="=InventoryManagement/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.vickee.restapp.service{DealerService.java[DealerService" modifiers="513" timestamp="1721196867913"/>
+    <typeInfo handle="=FlightTicketBooking/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.vickee.restapp.service{BookingService.java[BookingService" modifiers="513" timestamp="1721900963116"/>
+</typeInfoHistroy>

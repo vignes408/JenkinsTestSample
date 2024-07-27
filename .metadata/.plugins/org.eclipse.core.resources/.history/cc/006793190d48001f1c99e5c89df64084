@@ -1,0 +1,15 @@
+package com.vickee.seleniumtestex;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.openqa.selenium.WebDriver;
+
+class AppTest {
+
+	@Test
+	void test() {
+		WebDriver driver = new 
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.vickee.restapp.serviceimpl;
+
+import org.springframework.stereotype.Service;
+
+import com.vickee.restapp.model.Register;
+import com.vickee.restapp.service.RegisterService;
+
+
+@Service
+public class RegisterServiceImpl implements RegisterService {
+
+	@Override
+	public String addRegister(Register register) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

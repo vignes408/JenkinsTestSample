@@ -1,0 +1,12 @@
+package com.vickee.restapp.service;
+
+import java.util.List;
+
+public interface ArtistService {
+	
+	public void addArtist(ArtistSe book);
+	public Booking getBooking(int bid);
+	List<Booking> getAllBooking();
+	public void updateBooking(Booking book);
+	public void deleteBooking(int bid);
+}

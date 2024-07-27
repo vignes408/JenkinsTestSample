@@ -1,0 +1,14 @@
+package com.vickee.PayrollTest;
+
+
+
+import org.junit.jupiter.api.Test;
+
+class AddEmployeeTest {
+
+	@Test
+	void testAddEmp1() {
+		
+	}
+
+}

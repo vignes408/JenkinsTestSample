@@ -1,0 +1,5 @@
+package com.vickee.restapp.repo;
+
+public interface ArtistRepo {
+
+}

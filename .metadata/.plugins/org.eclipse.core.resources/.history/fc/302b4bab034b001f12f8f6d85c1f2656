@@ -1,0 +1,14 @@
+package com.vickee.restapp.service;
+
+import java.util.List;
+
+import com.vickee.restapp.model.Artist;
+
+public interface ArtistService {
+	
+	public void addArtist(Artist art);
+	public Artist getBooking(int aid);
+	List<Artist> getAllBooking();
+	public void updateBooking(Artist art);
+	public void deleteBooking(int aid);
+}

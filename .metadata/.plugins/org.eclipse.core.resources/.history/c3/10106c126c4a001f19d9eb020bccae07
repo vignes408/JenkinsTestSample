@@ -1,0 +1,45 @@
+package com.vickee.restapp.serviceimpl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.vickee.restapp.model.Booking;
+import com.vickee.restapp.repository.BookingRepo;
+import com.vickee.restapp.service.BookingService;
+
+@Service
+public class BookingServiceImpl implements BookingService {
+	
+	BookingRepo repo;
+	@Override
+	public void addBooking(Booking book) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Booking getBooking(int bid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Booking> getAllBooking() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateBooking(Booking book) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteBooking(int bid) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

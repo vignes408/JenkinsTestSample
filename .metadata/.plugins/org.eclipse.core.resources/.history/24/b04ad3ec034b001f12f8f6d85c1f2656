@@ -1,0 +1,46 @@
+package com.vickee.restapp.serviceimpl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.vickee.restapp.model.Artist;
+import com.vickee.restapp.service.ArtistService;
+
+
+@Service
+public class ArtistServiceImpl implements ArtistService {
+	
+	
+	
+	@Override
+	public void addArtist(Artist art) {
+		
+
+	}
+
+	@Override
+	public Artist getArtist(int aid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Artist> getAllArtist() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateArtist(Artist art) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteArtist(int aid) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

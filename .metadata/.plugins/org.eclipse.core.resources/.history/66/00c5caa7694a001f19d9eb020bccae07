@@ -1,0 +1,7 @@
+package com.vickee.restapp.model;
+
+
+@En
+public class Booking {
+
+}
